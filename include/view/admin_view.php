@@ -9,7 +9,7 @@
   <h1>CodeSHOP 管理ページ</h1>
   <div>
     <a class="nemu" href="./logout.php">ログアウト</a>
-    <a href="./user_management.php">ユーザ管理ページ</a>
+    <a href="./user.php">ユーザ管理ページ</a>
     <?php
         print $msg;
         foreach ($err_msg as $value) {
