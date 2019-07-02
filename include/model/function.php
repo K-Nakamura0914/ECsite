@@ -137,11 +137,6 @@ function make_rand_str() {
     return $str_r;
 }
 
-//ファイル名作成
-function make_filename() {
-
-}
-
 // 商品追加
 function insert_item($item_name, $price, $img, $status, $stock, $created_date, $link, $tmp) {
     $sql = 'INSERT INTO item(name, price, img, status, created_date, updated_date) VALUES (\'' . $item_name . '\',' . $price . ',\'' . $img . '\',' . $status . ',\'' . $created_date . '\',\'' . $created_date . '\')';
@@ -149,7 +144,7 @@ function insert_item($item_name, $price, $img, $status, $stock, $created_date, $
     $item_id = mysqli_insert_id($link);
     $sql2 = 'INSERT INTO stock(item_id, stock, created_date, updated_date) VALUES (' . $item_id . ',' . $stock . ',\'' . $created_date . '\',\'' . $created_date . '\')';
     mysqli_query($link, $sql2);
-    move_uploaded_file($tmp, '/home/codecamp27263/htdocs/codeshop_img/' . $img);
+    move_uploaded_file($tmp, './header_img/' . $img);
 }
 
 // 在庫数変更
@@ -345,9 +340,10 @@ function login_check_session() {
     session_start();
     if (isset($_SESSION['user_name']) === TRUE) {
         if ($_SESSION['user_name'] === 'admin') {
-            header('location: http://codecamp27263.lesson8.codecamp.jp//codeshop_management.php');
+            header('location:
+            https://bagged-zed-23718.herokuapp.com/admin.php');
         } else {
-            header('location: http://codecamp27263.lesson8.codecamp.jp//top_controller.php');
+            header('location: https://bagged-zed-23718.herokuapp.com/top.php');
         }
     }
 }
@@ -356,9 +352,9 @@ function login_check_session() {
 function admin_check_session() {
     session_start();
     if (!isset($_SESSION['user_name']) === TRUE) {
-        header('location: http://codecamp27263.lesson8.codecamp.jp//login_controller.php');
+        header('location: https://bagged-zed-23718.herokuapp.com');
     } else if ($_SESSION['user_name'] !== 'admin') {
-        header('location: http://codecamp27263.lesson8.codecamp.jp//top_controller.php');
+        header('location: https://bagged-zed-23718.herokuapp.com/top.php');
     }
 }
 

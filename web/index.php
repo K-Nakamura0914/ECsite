@@ -31,13 +31,13 @@ if (isset($_POST['user_name']) === TRUE && isset($_POST['password']) === TRUE) {
             //管理者の場合
             db_close($link);
             set_session($user_name, $user_id);
-            header('location: http://codecamp27263.lesson8.codecamp.jp//codeshop_management.php');
+            header('location: https://bagged-zed-23718.herokuapp.com/admin.php');
             exit;
         } else {
             //一般ユーザーの場合
             db_close($link);
             set_session($user_name, $user_id);
-            header('location: http://codecamp27263.lesson8.codecamp.jp//top_controller.php');
+            header('location: https://bagged-zed-23718.herokuapp.com/top.php');
             exit;
         }
     }
