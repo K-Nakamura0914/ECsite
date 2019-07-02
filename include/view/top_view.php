@@ -11,7 +11,7 @@
       <a href="top_controller.php">
         <img class="logo" src="./header_img/logo.png" alt="CodeSHOP">
       </a>
-      <a class="nemu" href="logout_controller.php">ログアウト</a>
+      <a class="nemu" href="logout.php">ログアウト</a>
       <a href="cart_controller.php"><img class="cart" src="./header_img/cart.png"></a>
       <p class="nemu">ユーザー名：<?php print $_SESSION['user_name']; ?></p>
     </div>
@@ -25,8 +25,8 @@
       ?>
       <li>
         <div class="item">
-          <form action="top_controller.php" method="post">
-            <img class="img_size" src="./codeshop_img/<?php print $value['img']; ?>" >
+          <form action="top.php" method="post">
+            <img class="img_size" src="./product_img/<?php print $value['img']; ?>" >
             <div class="item-info">
               <span class="item-name"><?php print htmlspecialchars($value['name']); ?></span>
               <span class="item-price">¥<?php print htmlspecialchars($value['price']); ?></span>
