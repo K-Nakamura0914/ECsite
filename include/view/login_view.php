@@ -8,7 +8,7 @@
 <body>
   <header>
     <div class="header-box">
-      <a href="top_controller.php">
+      <a href="top.php">
         <img class="logo" src="./header_img/logo.png" alt="CodeSHOP">
       </a>
     </div>
@@ -30,5 +30,6 @@
       </div>
     </div>
   </div>
+  <p>※画像は全てCodeCampに帰属します。</p>
 </body>
 </html>
