@@ -1,9 +1,0 @@
-{
-    "require": {
-      "php": "~7.0",
-      "ext-mbstring": "*"
-    },
-    "require-dev": {
-      "heroku/heroku-buildpack-php": "*"
-    }
-}
