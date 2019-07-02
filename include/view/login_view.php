@@ -9,7 +9,7 @@
   <header>
     <div class="header-box">
       <a href="top_controller.php">
-        <img class="logo" src="./codeshop_img/logo.png" alt="CodeSHOP">
+        <img class="logo" src="./header_img/logo.png" alt="CodeSHOP">
       </a>
     </div>
   </header>
