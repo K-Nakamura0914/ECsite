@@ -144,7 +144,7 @@ function insert_item($item_name, $price, $img, $status, $stock, $created_date, $
     $item_id = mysqli_insert_id($link);
     $sql2 = 'INSERT INTO stock(item_id, stock, created_date, updated_date) VALUES (' . $item_id . ',' . $stock . ',\'' . $created_date . '\',\'' . $created_date . '\')';
     mysqli_query($link, $sql2);
-    move_uploaded_file($tmp, './header_img/' . $img);
+    move_uploaded_file($tmp, __dir__ . '/header_img/' . $img);
 }
 
 // 在庫数変更
