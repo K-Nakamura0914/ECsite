@@ -12,7 +12,7 @@
         <img class="logo" src="./header_img/logo.png" alt="CodeSHOP">
       </a>
       <a class="nemu" href="logout.php">ログアウト</a>
-      <a href="cart_controller.php"><img class="cart" src="./header_img/cart.png"></a>
+      <a href="cart.php"><img class="cart" src="./header_img/cart.png"></a>
       <p class="nemu">ユーザー名：<?php print $_SESSION['user_name']; ?></p>
     </div>
   </header>
