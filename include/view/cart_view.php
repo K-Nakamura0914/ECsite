@@ -43,7 +43,7 @@
             <input type="hidden" name="sql_kind" value="delete_cart">
           </form>
           <span class="cart-item-price">¥ <?php print $value['price']; ?></span>
-          <form class="form_select_amount" id="form_select_amount159" action="cart_controller.php" method="post">
+          <form class="form_select_amount" id="form_select_amount159" action="cart.php" method="post">
             <input type="text" class="cart-item-num2" min="0" name="select_amount" value="<?php print $value['amount']; ?>">個&nbsp;<input type="submit" value="変更する" name="change">
             <input type="hidden" name="item_id" value="<?php print $value['id']; ?>">
             <input type="hidden" name="sql_kind" value="change_cart">
