@@ -78,4 +78,4 @@ $item_data = get_item($link);
 db_close($link);
 
 // 商覧管理ページ表示
-include_once '..//include/view/product_management.php';
+include_once '..//include/view/admin_view.php';
