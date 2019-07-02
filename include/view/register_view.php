@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>ログインページ</title>
-  <link type="text/css" rel="stylesheet" href="css/common.css">
+  <title>ユーザ登録ページ</title>
+  <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
   <header>
@@ -14,20 +14,19 @@
     </div>
   </header>
   <div class="content">
-    <div class="login">
+    <div class="register">
       <?php
+      print $msg;
       foreach($err_msg as $value) {
           print '<p class="err">' . $value .'</p>';
       }
       ?>
-      <form method="post">
+      <form method="post" action="register.php">
         <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
         <div>パスワード：<input type="password" name="password" placeholder="パスワード">
-        <div><input type="submit" value="ログイン">
+        <div><input type="submit" value="登録">
       </form>
-      <div class="account-create">
-        <a href="register.php">ユーザーの新規作成</a>
-      </div>
+      <div class="login-link"><a href="index.php">ログインページに移動する</a></div>
     </div>
   </div>
 </body>
