@@ -366,7 +366,7 @@ function admin_check_session() {
 function check_session() {
     session_start();
     if (!isset($_SESSION['user_name']) === TRUE) {
-        header('location: http://codecamp27263.lesson8.codecamp.jp//login_controller.php');
+        header('location: https://bagged-zed-23718.herokuapp.com/');
     }
 }
 
@@ -385,7 +385,7 @@ function logout() {
     session_start();
     unset($_SESSION['user_name']);
     unset($_SESSION['user_id']);
-    header('location: http://codecamp27263.lesson8.codecamp.jp//login_controller.php');
+    header('location: https://bagged-zed-23718.herokuapp.com/');
 }
 
 //カートに入れる
