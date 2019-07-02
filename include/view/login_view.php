@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>ログインページ</title>
-  <link type="text/css" rel="stylesheet" href="common.css">
+  <link type="text/css" rel="stylesheet" href="css/common.css">
 </head>
 <body>
   <header>
